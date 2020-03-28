@@ -1,0 +1,22 @@
+{
+  "name": "dev_friend",
+  "version": "1.0.0",
+  "description": "Online portal for developers to register themselves, add their skills, and find developers based on their skills.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nish7898/dev_friend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nish7898/dev_friend/issues"
+  },
+  "homepage": "https://github.com/nish7898/dev_friend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

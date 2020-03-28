@@ -4,7 +4,8 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 var ejs = require('ejs');
-app.set('view engine','ejs')
+app.set('view engine','ejs');
+
 
 
 require('./controller/routes.js')(app);

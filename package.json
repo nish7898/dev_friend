@@ -4,7 +4,8 @@
   "description": "Online portal for developers to register themselves, add their skills, and find developers based on their skills.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/nish7898/dev_friend#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
   }
 }

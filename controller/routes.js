@@ -6,9 +6,16 @@ module.exports = function(router,passport){
     });
 
     require('./routes/login.js')(router,passport);
+    require('./routes/newProject.js')(router);
+    require('./routes/profile')(router);
+    require('./routes/updateProject.js')(router);
+    require('./routes/search.js')(router);
+    require('./routes/requestProject.js')(router);
 
     router.get('/profile',isLoggedIn,function(request,response){
-        response.send("Hello!");
+        response.render('profile',{
+            user : request.user
+        });
     })
 }
 

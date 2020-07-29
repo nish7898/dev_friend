@@ -1,0 +1,381 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nishant</title>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/public/profile/profile.css">
+</head>
+<body>
+    <section id="profile-header">
+        <nav class="navbar navbar-expand-lg ml-auto navbar-light ">
+            <strong class="navbar-brand" href="" id="myName">Dev Friend</strong>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Project</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <hr>
+    <section id="">
+        <div class="row">
+            <div class="col-lg-4">
+                <center>
+                <img src="/public/profile/nishant.jpg" id="dev-image">
+                <div id="user-info">
+                    <h1 id="user-name"></h1>
+                    <div id="github">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i><br>
+                        <a href="https://github.com/nish7898" id="github-link"></a>
+                    </div>
+                    <div id="linkedin">
+                        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i><br>
+                        <a href="https://github.com/nish7898" id="linkedin-link"></a>
+                    </div><br>
+                    <button class="btn btn-large btn-secondary" id="update-start"><strong>Edit</strong> <span><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></span></button>
+                </div>
+
+                <div id="user-info-update" style="display: none;">
+                    <br>
+                    <h3>Name</h3>
+                    <input type="text" class="form-control" id="user-name-update" value="Nishant Kumar">
+                    <br>
+                    <h3>Github</h3>
+                    <input type="text" class="form-control" id="github-update">
+                    <br>
+                    <h3>Linkedin</h3>
+                    <input type="text" class="form-control" id="linkedin-update">
+                    <br>
+                    <button class="btn btn-large btn-secondary" id="update-done">Update</button>
+                </div>
+                </center>
+                 
+            </div>
+            <div class="col-lg-4">
+                <h3>About<span style="position: absolute; right: 6%;"><a id="update-about-start" href="#"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a></span></h3>
+                <div id="about-div">
+                    <p id="about-description"></p>
+                </div>
+                <div id="about-div-update" style="display: none;">
+                    <div class="form-group">
+                        <textarea class="form-control" id="update-about-text" rows="7"></textarea>
+                    </div>
+                    <button class="btn btn-large btn-secondary" id="update-description-done">Update</button>
+                </div>
+                <br>
+                <h3>Skills</h3>
+                <div id="skills">
+                    <div id="skill-set"></div>
+                    <!--<button class="btn btn-large btn-secondary">Java <span><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <button class="btn btn-large btn-secondary">JavaScript <span><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <button class="btn btn-large btn-secondary">Nodejs <span><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <button class="btn btn-large btn-secondary">Docker <span><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <button class="btn btn-large btn-secondary">MongoDB <span><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <button class="btn btn-large btn-secondary">Express <span><i class="fa fa-times" aria-hidden="true"></i></span></button>
+                    <br><br>-->
+                    <br><br>
+                    <div class="form-group" id="update-skills" style="display: none;">
+                        
+                        <input type="text" id="update-skill-text" class="form-control" placeholder="Example : Java, Python">
+                        <button class="btn btn-large btn-secondary" id="update-skill-button" style="margin-top: 2%;">Add Skill</button>
+                        
+                        <br>
+                        <button class="btn btn-large btn-secondary" id="save-changes-button" style="margin-top: 2%;">Save Changes</button>
+                    </div>
+                    
+                </div>
+                
+                <button class="btn btn-large btn-secondary" id="add-new-skills">Add new skills <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+            </div>
+
+            <div class="col-lg-4">
+                <h3>My Projects</h3>
+                <div id="my-projects">
+                </div>
+                <button class="btn btn-large btn-secondary" id="add-new-project-button">Add Project <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="new-project" style="display: none;">
+        <br>
+        <hr>
+        <center><h2>Add New Project</h2></center>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Project Name</h3>
+                <input type="text" class="form-control" id="new-project-name">
+                <br>
+                <h3>Description</h3>
+                <textarea class="form-control" rows="4" id="new-project-description"></textarea>
+            </div>
+            <div class="col-lg-6">
+                <div id="skills-present-projects">
+                    <h3>Skills Present</h3>
+                    
+                    <div id="skill-project-present">
+                        <div id="skill-set-project-present"></div>
+                        <br>
+                        <div class="form-group" id="update-skills-project-present" style="display: none;">
+                            <input type="text" id="update-skill-project-present-text" class="form-control" placeholder="Example : Java, Python">
+                            <button class="btn btn-large btn-secondary" id="update-skill-project-present-button" style="margin-top: 2%;">Add Skill</button>
+                            
+                            <br>
+                            <button class="btn btn-large btn-secondary" id="save-changes-button-project-present" style="margin-top: 2%;">Save Changes</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-large btn-secondary" id="add-new-skills-project-present">Add new skills <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+                </div><br>
+                <div id="skills-required-projects">
+                    <h3>Skills Required</h3>
+                    <div id="skill-required-present">
+                        <div id="skill-set-project-required"></div>
+                        <br>
+                        <div class="form-group" id="update-skills-project-required" style="display: none;">
+                            
+                            <input type="text" id="update-skill-project-required-text" class="form-control" placeholder="Example : Java, Python">
+                            <button class="btn btn-large btn-secondary" id="update-skill-project-required-button" style="margin-top: 2%;">Add Skill</button>
+                            
+                            <br>
+                            <button class="btn btn-large btn-secondary" id="save-changes-button-project-required" style="margin-top: 2%;">Save Changes</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-large btn-secondary" id="add-new-skills-project-required">Add new skills <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center><button class="btn btn-large btn-secondary" id="add-new-project"><strong>Add Project</strong></button></center>
+    </section>
+    <hr>
+
+
+    <section>
+        <center>
+            <h2>Suggested Projects</h2>
+        </center>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="suggested-project">
+                    <h3>Project 1</h3>
+                    <p>The project is build primarily for the student developers who want to build projects but lack multiple skills, as it is not possible to master many skills at a time for many.</p>
+                </div>
+                <div class="suggested-project">
+                    <h3>Project 2</h3>
+                    <p>The project is build primarily for the student developers who want to build projects but lack multiple skills, as it is not possible to master many skills at a time for many.</p>
+                </div>
+                <div class="suggested-project">
+                    <h3>Project 3</h3>
+                    <p>The project is build primarily for the student developers who want to build projects but lack multiple skills, as it is not possible to master many skills at a time for many.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="suggested-project">
+                    <h3>Project 4</h3>
+                    <p>The project is build primarily for the student developers who want to build projects but lack multiple skills, as it is not possible to master many skills at a time for many.</p>
+                </div>
+                <div class="suggested-project">
+                    <h3>Project 5</h3>
+                    <p>The project is build primarily for the student developers who want to build projects but lack multiple skills, as it is not possible to master many skills at a time for many.</p>
+                </div>
+                <div class="suggested-project">
+                    <h3>Project 6</h3>
+                    <p>The project is build primarily for the student developers who want to build projects but lack multiple skills, as it is not possible to master many skills at a time for many.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="view-my-project" style="display: none;">
+        <br>
+        <hr>
+        <center><h2 id="my-project-name"></h2></center>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Description</h3>
+                <p id="my-project-description"></p>
+                <div id="skills-present-my-projects">
+                    <h3>Skills Present</h3>
+                    
+                    <div id="skill-my-project-present">
+                        <div id="skill-set-my-project-present">
+                        </div>
+                        <br>
+                        <div class="form-group" id="update-skills-my-project-present" style="display: none;">
+                            <input type="text" id="update-skill-my-project-present-text" class="form-control" placeholder="Example : Java, Python">
+                            <button class="btn btn-large btn-secondary" id="update-skill-my-project-present-button" style="margin-top: 2%;">Add Skill</button>
+                            <br>
+                            <button class="btn btn-large btn-secondary" id="save-changes-button-my-project-present" style="margin-top: 2%;">Save Changes</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-large btn-secondary" id="add-new-skills-my-project-present">Add new skills <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+                </div><br>
+                <div id="skills-required-my-projects">
+                    <h3>Skills Required</h3>
+                    
+                    <div id="skill-my-project-required">
+                        <div id="skill-set-my-project-required">
+                        </div>
+                        <br>
+                        <div class="form-group" id="update-skills-my-project-required" style="display: none;">
+                            <input type="text" id="update-skill-my-project-required-text" class="form-control" placeholder="Example : Java, Python">
+                            <button class="btn btn-large btn-secondary" id="update-skill-my-project-required-button" style="margin-top: 2%;">Add Skill</button>
+                            <br>
+                            <button class="btn btn-large btn-secondary" id="save-changes-button-my-project-required" style="margin-top: 2%;">Save Changes</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-large btn-secondary" id="add-new-skills-my-project-required">Add new skills <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+                </div><br>
+            </div>
+            <div class="col-lg-6">
+                <h3>Requests</h3>
+                <div id="request-my-project"><br></div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="search-project">
+        <center><h2>Search</h2></center>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>You can search users you want to collaborate using their name or you can find users based on their skill set.</p>
+                <br>
+                <h3>Name of the user</h3>
+                <input type="text" class="form-control" id="user-name-search-text">
+                <br>
+                <h3>Skills</h3>
+                <div id="skills-search-user"></div>
+                <br>
+                <div class="form-group" id="update-skills-search-person" style="display: none;">
+                    
+                    <input type="text" id="update-skill-search-person-text" class="form-control" placeholder="Example : Java, Python">
+                    <button class="btn btn-large btn-secondary" id="update-skill-search-person-button" style="margin-top: 2%;">Add Skill</button>
+                    <br>
+                    <button class="btn btn-large btn-secondary" id="save-changes-button-search-person" style="margin-top: 2%;">Save Changes</button>
+                </div>
+                <button class="btn btn-large btn-secondary" id="add-new-skills-search-person">Add skill <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+                <br><br>
+                <button type="button" class="btn btn-secondary btn-lg" id="search-user-button">Search User</button>
+                <br><br>
+                <div id="show-user-results" style="display: none;">
+                    <h3>Results</h3>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <p>You can search projects you want to join using their name or you can find projects based on the required skill set.</p>
+                <br>
+                <h3>Name of the project</h3>
+                <input type="text" class="form-control" id="project-name-search-text">
+                <br>
+                <h3>Skills</h3>
+                <div id="skills-search-project"></div><br>
+                <div class="form-group" id="update-skills-search-project" style="display: none;">
+                    
+                    <input type="text" id="update-skill-search-project-text" class="form-control" placeholder="Example : Java, Python">
+                    <button class="btn btn-large btn-secondary" id="update-skill-search-project-button" style="margin-top: 2%;">Add Skill</button>
+                    <br>
+                    <button class="btn btn-large btn-secondary" id="save-changes-button-search-project" style="margin-top: 2%;">Save Changes</button>
+                </div>
+                <button class="btn btn-large btn-secondary" id="add-new-skills-search-project">Add skill <span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+                <br><br>
+                
+                <button type="button" class="btn btn-secondary btn-lg" id="search-project-button">Search Project</button>
+                <br><br>
+                <div id="show-project-results" style="display: none;">
+                    <h3>Results</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="view-search-project" style="display: none;">
+        <hr><br>
+        <center><h2 id="view-search-project-name">Project Name</h2></center>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Description</h3>
+                <p id="view-search-project-description"></p><br>
+                <h3>Skills Present</h3>
+                <div id="view-project-skill-present"></div>
+                <br>
+                <h3>Skills Required</h3>
+                <div id="view-project-skill-required"></div>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <h3>Add Request</h3>
+                <br>
+                <div id="add-request-skills">
+                    <p>Add or Remove Skills</p>
+                    <div id="add-request-skill-set"></div><br>
+                    <div>
+                        <input type="text" id="update-skill-request-project-text" class="form-control" placeholder="Enter one of the required skills">
+                        <button class="btn btn-large btn-secondary" id="update-skill-request-project-button" style="margin-top: 2%;">Add Skill</button>
+                    </div>
+                    <br>
+                    <button class="btn btn-large btn-secondary" id="add-request-button">Add Request</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="view-user" style="display: none;">
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <center>
+                <h1 id="user-name-view-user"></h1><br>
+                    <div id="github-view-user">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i><br>
+                        <a id="github-link-view-user"></a>
+                    </div><br>
+                    <div id="linkedin-view-user">
+                        <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i><br>
+                        <a id="linkedin-link-view-user"></a>
+                    </div><br>
+                </center>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3>About</h3>
+                <p id="description-view-user"></p><br>
+                <h3>Skills</h3>
+                <div id="skills-view-user"></div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3>Projects</h3>
+                <div id="projects-view-user"></div>
+            </div>
+        </div>
+    </section>
+    <span id='variableJSON' hidden>
+        <%= JSON.stringify(user); %>
+    </span>
+    <hr>
+    
+</body>
+<script src="/public/profile/profile.js"></script>
+</html>

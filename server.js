@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 
 var passport = require('passport');
 
@@ -15,6 +16,8 @@ require('./controller/requirements.js')(app,passport);
 
 require('./controller/auth/auth.js')(passport);
 require('./controller/routes.js')(app,passport);
+
+app.use('/public',express.static(path.join(__dirname,'public')));
 
 app.listen(port,function(){
     console.log("Server up and running at port : ",port);

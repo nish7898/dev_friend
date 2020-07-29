@@ -1,0 +1,112 @@
+
+
+#profile-header{
+    padding : 1% 10% 1% 10%;
+    
+}
+
+body{
+    background-color: rgb(233, 233, 248);
+}
+
+h1,h3{
+    font-family: 'Comfortaa';font-size: x-large;
+}
+
+h2{
+    font-family: 'Comfortaa';font-size: xx-large;
+}
+
+p{
+    font-family: 'Comfortaa';font-size: large;
+}
+
+
+a {
+    color: black;
+    padding-top: 10px;
+    font-family: 'Comfortaa';font-size: medium;
+}
+
+strong{
+    padding: 10% 0%;
+    font-family: 'Comfortaa';font-size: xx-large;
+}
+
+
+#edit-button{
+    
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.col-lg-4{
+    padding: 3% 5%;
+    
+}
+
+.col-lg-6{
+    padding: 3% 10%;
+    
+}
+
+#github{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#dev-image{
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 10px 20px 10px 20px;
+}
+
+#about-div{
+    padding: 3% 0%;
+}
+
+#about-description{
+    padding-top: 1%;
+    font-family: 'Comfortaa';font-size: medium;
+}
+
+.project-names{
+    padding: 0% 0%;
+    font-family: 'Comfortaa';font-size: medium;
+}
+
+#my-projects{
+    padding: 2% 1%;
+}
+
+#skill-name{
+    background-color: rgb(214, 214, 247);
+}
+
+.btn{
+    margin: 2px 2px 2px 2px;
+}
+
+hr{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.suggested-project{
+    padding: 3% 5%;
+}
+
+.col-lg-6{
+    padding : 2% 5%;
+}
+
+#search-user{
+    padding: 3% 3%;
+}
